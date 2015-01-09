@@ -1,0 +1,69 @@
+{ 
+	"date" : "2011-08-21T18:02:52.249Z"
+}
+
+{ 
+	"date" : "2015-08-21T18:02:52.249Z",
+	"owner" : "5481ac2e29750aa61421177e"
+}
+
+[{"_id":"54819f8773316896422274d6","name":"henri"},
+{"_id":"5481a8d9d0a43cfd1363e755","pseudo":"pseudo1","email":"p@yopmail.com","geolocation":true,"language":"english","__v":0}]
+
+{ 
+"pseudo" : "lola",
+"email" : "lola@yopmail.com",
+"geolocation" : "true",
+"language" : "english" 
+}
+
+{ 
+	"pseudo" : "lolo",
+	"geolocation" : "false",
+	"language" : "french"
+}
+
+{
+	"name" : "home", 
+	"owner" : "5481ac2e29750aa61421177e",
+	"address" : "21 jump street US California", 
+	"lat" : "12.22566",
+	"long" : 86.216325
+}
+
+{
+	"name" : "maison", 
+	"owner" : "5481ac2e29750aa61421177e",
+	"address" : "21 rue du saut Toulouse", 
+	"lat" : "31.22566",
+	"long" : 40.216325
+}
+
+{
+	"name" : "go to the supermarket",
+	"owner" : "5481ac2e29750aa61421177e"
+}
+
+{ 
+	"name" : "do my first task", 
+	"owner" : "5481ac2e29750aa61421177e",
+	"description" : "try to save a task", 
+	"context" : "5481e2e3834dffa01ef7cc0e", 
+	"duration" : 5, 
+	"priority" : 3, 
+	"label" : "work", 
+	"progress" : 80, 
+	"dueDate" : "2014-11-03T14:42:40.439Z"
+}
+
+{ 
+	"name" : "do my second task", 
+	"owner" : "5481ac2e29750aa61421177e",
+	"description" : "try to save a task", 
+	"context" : "5481e2e3834dffa01ef7cc0e", 
+	"duration" : 2, 
+	"priority" : 0, 
+	"label" : "work", 
+	"progress" : 80, 
+	"dueDate" : "2014-11-03T14:42:40.439Z"
+}

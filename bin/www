@@ -1,0 +1,30 @@
+#!/usr/bin/env node
+var debug = require('debug')('ForgetMeNot');
+var cluster = require('cluster');
+var numCPUs = require('os').cpus().length;
+
+// var app = require('../app');
+// app.set('port', process.env.PORT || 3000);
+
+
+// var server = app.listen(app.get('port'), function() {
+// 	debug('Express server listening on port ' + server.address().port);
+// });
+
+if (cluster.isMaster) {
+	// Fork workers.
+	for (var i = 0; i < numCPUs; i++) {
+		cluster.fork();
+	}
+
+	cluster.on('exit', function(worker, code, signal) {
+		debug('worker ' + worker.process.pid + ' died');
+	});
+} else {
+	var app = require('../app');
+	app.set('port', process.env.PORT || 3000);
+
+	var server = app.listen(app.get('port'), function() {
+		debug('Express server listening on port ' + server.address().port);
+	});
+}
